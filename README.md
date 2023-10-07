@@ -4,6 +4,7 @@ network_blocks contain the building blocks of the U_net(expansion, and redution 
 Data_transform contains data augmentation transformations
 
 I am getting the following error, I would really grateful if you could help me out on this. Thanks
+
 Traceback (most recent call last):
   File "/NFSHOME/mjawaid/U_net/pytorch_moded/Unet_Model.py", line 282, in <module>
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-5)
