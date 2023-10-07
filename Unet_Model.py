@@ -275,7 +275,7 @@ validation_generator = torch.utils.data.DataLoader(validation_set, batch_size=tr
 
 criteria = torch.nn.MSELoss()
 print(model.parameters())
-optimizer = torch.optim.Adam(list(model.parameters()), lr=1e-5)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-5)
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', 
                                                        patience=4, factor=0.2, verbose=True)
 
